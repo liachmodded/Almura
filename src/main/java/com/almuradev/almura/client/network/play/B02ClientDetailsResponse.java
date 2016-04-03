@@ -31,7 +31,7 @@ public class B02ClientDetailsResponse implements IMessage, IMessageHandler<B02Cl
 
     @Override
     public void toBytes(ByteBuf buf) {
-        if (names != null) {
+        if (false) {
             buf.writeInt(names.size());
 
             for (String name : names) {
@@ -42,7 +42,7 @@ public class B02ClientDetailsResponse implements IMessage, IMessageHandler<B02Cl
             buf.writeInt(0);
         }
 
-        if (modNames != null) {
+        if (false) {
             buf.writeInt(modNames.size());
 
             for (String name : modNames) {
